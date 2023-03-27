@@ -1,5 +1,295 @@
 **Tablero Trello:** https://trello.com/b/grG7R8Bd/practica3-da
 
+**Home Fauna:** ![Captura de pantalla 2023-03-27 173745](https://user-images.githubusercontent.com/124682634/227998430-5e2c03ff-1d77-4bc0-98d5-bf0606b6fc05.png)
+
+**Base de datos Fauna:** ![Captura de pantalla 2023-03-27 174833](https://user-images.githubusercontent.com/124682634/227998608-6605c568-7fc9-403d-a502-5b0f8991ca62.png)
+
+**Coleccion Fauna:** ![Captura de pantalla 2023-03-27 174942](https://user-images.githubusercontent.com/124682634/227998695-47207a02-8e3e-4811-9281-9067c1e7c2e2.png)
+
+**Documentos en formato JSON:**
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359267443240075468"),
+  "ts": 1678883071000000,
+  "data": {
+    "nombre": "Alvaro",
+    "apellido": "Ramirez",
+    "direccion": {
+      "calle": "Plaza San Agustin",
+      "localidad": "Jaen",
+      "provincia": "Jaen",
+      "pais": "España"
+    },
+    "años en activo": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "numero de torneos disputados": 5,
+    "numero de torneos ganados": 2,
+    "numero de lesiones": 3
+  }
+}
+```
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359267527127204044"),
+  "ts": 1678883063360000,
+  "data": {
+    "nombre": "Pablo",
+    "apellido": "Serrano",
+    "direccion": {
+      "calle": "Calle Madre Soledad Torres Acosta",
+      "localidad": "Jaen",
+      "provincia": "Jaen",
+      "pais": "España"
+    },
+    "años en activo": [
+      2019,
+      2020
+    ],
+    "numero de torneos disputados": 1,
+    "numero de torneos ganados": 0,
+    "numero de lesiones": 0
+  }
+}
+```
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359267625711173837"),
+  "ts": 1678883164050000,
+  "data": {
+    "nombre": "Ignacio",
+    "apellido": "Gomez",
+    "direccion": {
+      "calle": "Plaza de Montserrat",
+      "localidad": "Reus",
+      "provincia": "Tarragona",
+      "pais": "España"
+    },
+    "años en activo": [
+      2014,
+      2015,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "numero de torneos disputados": 10,
+    "numero de torneos ganados": 6,
+    "numero de lesiones": 4
+  }
+}
+```
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359267731205259469"),
+  "ts": 1678883257980000,
+  "data": {
+    "nombre": "Martina",
+    "apellido": "Valero",
+    "direccion": {
+      "calle": "Avenida de Madrid",
+      "localidad": "Dos Hermanas",
+      "provincia": "Sevilla",
+      "pais": "España"
+    },
+    "años en activo": [
+      2022,
+      2023
+    ],
+    "numero de torneos disputados": 2,
+    "numero de torneos ganados": 1,
+    "numero de lesiones": 0
+  }
+}
+```
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359268139594154188"),
+  "ts": 1678883647455000,
+  "data": {
+    "nombre": "Amanda",
+    "apellido": "Jackson",
+    "direccion": {
+      "calle": "Derby Square",
+      "localidad": "Columbus",
+      "provincia": "Ohio",
+      "pais": "Estados Unidos"
+    },
+    "años en activo": [
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "numero de torneos disputados": 14,
+    "numero de torneos ganados": 8,
+    "numero de lesiones": 5
+  }
+}
+```
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359268293931958477"),
+  "ts": 1678883794630000,
+  "data": {
+    "nombre": "Andrea",
+    "apellido": "Nicolescu",
+    "direccion": {
+      "calle": "Strada Florilor",
+      "localidad": "Constanza",
+      "provincia": "Constanza",
+      "pais": "Rumania"
+    },
+    "años en activo": [
+      2005,
+      2006,
+      2007,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "numero de torneos disputados": 11,
+    "numero de torneos ganados": 2,
+    "numero de lesiones": 7
+  }
+}
+```
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359268413837672652"),
+  "ts": 1678883908980000,
+  "data": {
+    "nombre": "Martin",
+    "apellido": "Szoboszlai",
+    "direccion": {
+      "calle": "Gubacsi ut",
+      "localidad": "Ferencváros",
+      "provincia": "Budapest",
+      "pais": "Hungria"
+    },
+    "años en activo": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "numero de torneos disputados": 6,
+    "numero de torneos ganados": 5,
+    "numero de lesiones": 1
+  }
+}
+```
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359268542005117132"),
+  "ts": 1678884031210000,
+  "data": {
+    "nombre": "Radu",
+    "apellido": "Andreescu",
+    "direccion": {
+      "calle": "Str. Nucarilor",
+      "localidad": "Negureni",
+      "provincia": "Telenesti",
+      "pais": "Moldavia"
+    },
+    "años en activo": [
+      2005,
+      2006,
+      2007,
+      2008,
+      2009
+    ],
+    "numero de torneos disputados": 7,
+    "numero de torneos ganados": 3,
+    "numero de lesiones": 3
+  }
+}
+```
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359268651467014348"),
+  "ts": 1678884135615000,
+  "data": {
+    "nombre": "Kim",
+    "apellido": "Jae",
+    "direccion": {
+      "calle": "Ganseok-dong",
+      "localidad": "Incheon",
+      "provincia": "Incheon",
+      "pais": "Corea del sur"
+    },
+    "años en activo": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2022,
+      2023
+    ],
+    "numero de torneos disputados": 9,
+    "numero de torneos ganados": 8,
+    "numero de lesiones": 1
+  }
+}
+```
+
+```
+{
+  "ref": Ref(Collection("Desarrollo_Agil"), "359268798753145036"),
+  "ts": 1678884276060000,
+  "data": {
+    "nombre": "Felipe",
+    "apellido": "Drugovich",
+    "direccion": {
+      "calle": "Sao Gabriel",
+      "localidad": "Belo Horizonte",
+      "provincia": "Minas Gerais",
+      "pais": "Brasil"
+    },
+    "años en activo": [
+      2013,
+      2014,
+      2016,
+      2017
+    ],
+    "numero de torneos disputados": 4,
+    "numero de torneos ganados": 0,
+    "numero de lesiones": 2
+  }
+}
+```
+
+
+
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10503600&assignment_repo_type=AssignmentRepo)
 # *Plantilla Práctica Microservicios*: descripción de la aplicación
 
