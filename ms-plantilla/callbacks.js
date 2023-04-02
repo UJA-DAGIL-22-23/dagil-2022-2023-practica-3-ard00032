@@ -17,7 +17,7 @@ const client = new faunadb.Client({
     secret: 'fnAE_GEaT2AAzPOHXqxHQ5WbDbaQ0lkXw717v3D5',
 });
 
-const COLLECTION = "Desarrollo_Agil"
+const COLLECTION = "Plantilla"
 
 // CALLBACKS DEL MODELO
 
@@ -95,12 +95,34 @@ const CB_OTHERS = {
                 mensaje: "Microservicio MS Plantilla: acerca de",
                 autor: "Alvaro Ramirez Diaz",
                 email: "ard00032@red.ujaen.es",
-                fecha: "marzo, 2023"
+                fecha: "abril, 2023"
             });
         } catch (error) {
             CORS(res).status(500).json({ error: error.description })
         }
     },
+
+    /**
+     * Método para obtener todas las personas de la BBDD.
+     * @param {*} req Objeto con los parámetros que se han pasado en la llamada a esta URL 
+     * @param {*} res Objeto Response con las respuesta que se va a dar a la petición recibida
+     */
+        getTodas: async (req, res) => {
+            try {
+                let personas = await client.query(
+                    q.Map(
+                        q.Paginate(q.Documents(q.Collection(COLLECTION))),
+                        q.Lambda("X", q.Get(q.Var("X")))
+                    )
+                )
+                // console.log( personas ) // Para comprobar qué se ha devuelto en personas
+                CORS(res)
+                    .status(200)
+                    .json(personas)
+            } catch (error) {
+                CORS(res).status(500).json({ error: error.description })
+            }
+        },
 
 }
 
